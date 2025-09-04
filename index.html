@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <h5>Factorial of a number</h5>
+    <input type="button" onclick="factorial()" id="check-fact" value="check-factorial" aria-label="factorial-check"> 
+    <script lang="javascript" type="text/javascript">
+        function factorial(){
+            
+            alert("Enter number to check Factorial");
+            let n = parseInt(prompt("Enter number", ""));
+            if(isNaN(n) || n < 0){
+                alert("Enter valid number");
+                return;
+            }
+            let fact = 1;
+            for(let i = 1; i <= n; i++){
+            fact = fact * i;
+            }
+
+            alert('Factorial of ' + n + ' number is : ' + fact);
+            
+        }
+    </script>
+</body>
+</html>
